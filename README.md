@@ -1,1 +1,1 @@
-# -Ducami-Simple-Diary
+# [Ducami] Simple-Diary
