@@ -7,4 +7,4 @@
 |:------:|:---:|
 |Development People|김경훈, 신현규|
 |Development Language|C#|
-|Development Tool|WPF, Visual Studio|
+|Development Tool|WinForm, Visual Studio|
