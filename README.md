@@ -1,3 +1,10 @@
-# [Ducami] ToDo-List
+# [Ducami] ToDoList
 
-> Ducami 교육자료 ToDo-List 입니다. 
+> Ducami 교육자료 ToDoList 입니다. 
+
+## Stack
+||Window|
+|:------:|:---:|
+|Development People|김경훈, 신현규|
+|Development Language|C#|
+|Development Tool|WPF, Visual Studio|
