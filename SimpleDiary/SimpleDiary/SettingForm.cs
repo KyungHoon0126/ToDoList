@@ -34,6 +34,7 @@ namespace SimpleDiary
 
         private void SettingForm_Load(object sender, EventArgs e)
         {
+            if (strpath == null) strpath = "존재하지 않습니다!";
             file_dir.Text = "설정파일 경로: " + strpath;
         }
 
@@ -49,9 +50,9 @@ namespace SimpleDiary
                 {
                     out_file.WriteLine(dialog.FileName + "\\");
                 }
-                MainForm.setting_reload();
-                MessageBox.Show("설정 완료!");
             }
+            MainForm.setting_reload();
+            MessageBox.Show("설정 완료!");
         }
 
         private void make_setting_file_button_Click(object sender, EventArgs e)
@@ -62,7 +63,9 @@ namespace SimpleDiary
                 try
                 {
                     strpath = Environment.CurrentDirectory + "\\Setting.txt";
-                    System.IO.File.Create(strpath);
+                    using (FileStream fs =  File.Create(strpath))
+                    {
+                    }
                 }
                 catch (Exception error)
                 {
