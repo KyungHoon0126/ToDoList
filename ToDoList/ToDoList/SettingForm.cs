@@ -51,6 +51,7 @@ namespace SimpleDiary
                     out_file.WriteLine(dialog.FileName + "\\");
                 }
             }
+            MainForm.SettingCHK();
             MainForm.setting_reload();
             MessageBox.Show("설정 완료!");
         }

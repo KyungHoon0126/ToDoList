@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.make_file = new System.Windows.Forms.Button();
+            this.setting_load = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.load_button = new System.Windows.Forms.Button();
             this.save_button = new System.Windows.Forms.Button();
@@ -45,7 +45,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.make_file);
+            this.panel1.Controls.Add(this.setting_load);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.load_button);
             this.panel1.Controls.Add(this.save_button);
@@ -60,14 +60,15 @@
             this.panel1.Size = new System.Drawing.Size(949, 496);
             this.panel1.TabIndex = 0;
             // 
-            // make_file
+            // setting_load
             // 
-            this.make_file.Location = new System.Drawing.Point(670, 276);
-            this.make_file.Name = "make_file";
-            this.make_file.Size = new System.Drawing.Size(267, 46);
-            this.make_file.TabIndex = 9;
-            this.make_file.Text = "생성";
-            this.make_file.UseVisualStyleBackColor = true;
+            this.setting_load.Location = new System.Drawing.Point(670, 276);
+            this.setting_load.Name = "setting_load";
+            this.setting_load.Size = new System.Drawing.Size(267, 46);
+            this.setting_load.TabIndex = 9;
+            this.setting_load.Text = "설정 불러오기";
+            this.setting_load.UseVisualStyleBackColor = true;
+            this.setting_load.Click += new System.EventHandler(this.setting_load_Click);
             // 
             // textBox1
             // 
@@ -141,14 +142,14 @@
             this.설정ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(949, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(949, 30);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // 설정ToolStripMenuItem
             // 
             this.설정ToolStripMenuItem.Name = "설정ToolStripMenuItem";
-            this.설정ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
+            this.설정ToolStripMenuItem.Size = new System.Drawing.Size(53, 26);
             this.설정ToolStripMenuItem.Text = "설정";
             this.설정ToolStripMenuItem.Click += new System.EventHandler(this.설정ToolStripMenuItem_Click);
             // 
@@ -181,7 +182,7 @@
         private System.Windows.Forms.CheckedListBox ToDoListBox;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem 설정ToolStripMenuItem;
-        private System.Windows.Forms.Button make_file;
+        private System.Windows.Forms.Button setting_load;
     }
 }
 

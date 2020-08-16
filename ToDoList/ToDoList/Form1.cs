@@ -137,5 +137,10 @@ namespace SimpleDiary
                 textBox1.Text = "";
             }
         }
+
+        private void setting_load_Click(object sender, EventArgs e)
+        {
+            SettingCHK();
+        }
     }
 }
